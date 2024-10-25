@@ -33,6 +33,7 @@ bool convertNC4HW4BufferBetweenNC16HW16Buffer(const Tensor *input, Tensor *outpu
 #endif
 
 bool convertBufferToBuffer(Tensor *input, Tensor *output, OpenCLRuntime *runtime, bool toDevice, bool toHost, bool needWait = false, bool svmFlag = false);
+bool convertGLMemBetweenCLmem(const Tensor *input, const Tensor *output, OpenCLRuntime *runtime, bool toDevice, bool toHost);
                                        
 class BufferConvertor {
 public:
